@@ -6,14 +6,15 @@
 }
 
 /* Set the font and background colors for the entire page */
-body {
+body,html {
   font-family: "Roboto Mono", monospace;
   background-color: #9e9e9e;
+  min-height: 100vh;
 }
 
 /* Style the header */
 header {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -44,8 +45,13 @@ main {
   padding: 2em;
 }
 
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
 /* Style the hero image section */
-#hero-image {
+#hero-image, #about  {
   background-image: url(knife-background.jpg);
   background-position: center;
   background-size: cover;
@@ -244,10 +250,46 @@ main {
   }
 }
 
+/* contact page */
+form {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
 /* Style the footer */
 footer {
   background-color: #333;
   color: #fff;
   padding: 1em;
   text-align: center;
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
