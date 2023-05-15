@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Knife Making Business</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	
+	<script src="./app.js"></script>
+
 </head>
 
 <body>
 	<header>
-		<h1>Knife Making Business</h1>
+		<img src="images/My-logo.jpg" alt="Knife 1">
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
@@ -19,39 +32,100 @@
 			</ul>
 		</nav>
 	</header>
-	
+
 	<main>
 		<section id="hero-image">
-			<h2>Welcome to Our Knife Making Business</h2>
-			<p>We specialize in handcrafted knives that are designed for both beauty and function.</p>
-			<a href="#" class="cta-button">Shop Now</a>
+			<h2>Welcome to My Shop</h2>
+			<p>I specialize in handcrafted knives that are designed for both beauty and function.</p>
 		</section>
-		
+
 		<section id="featured-products">
 			<h2>Featured Products</h2>
 			<div class="product">
-				<img src="knife1.jpg" alt="Knife 1">
-				<h3>Knife 1</h3>
+				<div class="slideshow-container">
+					<div class="mySlides1">
+						<img src="images/knife2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides1">
+						<img src="images/camp-knifes.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides1">
+						<img src="images/blades.jpg" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+				</div>
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 				<p>$50</p>
 				<a href="#" class="cta-button">Add to Cart</a>
 			</div>
+			</div>
 			<div class="product">
-				<img src="knife2.jpg" alt="Knife 2">
 				<h3>Knife 2</h3>
+				<!-- Slideshow container -->
+				<div class="slideshow-container">
+
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides2">
+						<img src="images/knife2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides2">
+						<img src="images/camp-knifes.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides2">
+						<img src="images/blades.jpg" style="width:100%">
+					</div>
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 				<p>$75</p>
 				<a href="#" class="cta-button">Add to Cart</a>
 			</div>
 			<div class="product">
-				<img src="knife3.jpg" alt="Knife 3">
 				<h3>Knife 3</h3>
+				<div class="product-carousel">
+					<div>
+						<img src="images/knife2.jpg" alt="Knife 1">
+					</div>
+					<div>
+						<img src="images/camp-knifes.jpg" alt="Knife 1">
+					</div>
+					<div>
+						<img src="images/blades.jpg" alt="Knife 1">
+					</div>
+				</div>
 				<p>$100</p>
 				<a href="#" class="cta-button">Add to Cart</a>
 			</div>
+
 		</section>
 	</main>
-	
+
 	<footer>
-		<p>&copy; 2023 Knife Making Business. All Rights Reserved.</p>
+		<p>&copy; 2023 2N KNIVES. All Rights Reserved.</p>
 	</footer>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
+
 </html>
