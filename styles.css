@@ -50,10 +50,13 @@ main {
   min-height: 100vh;
 }
 
+h2 {
+  justify-items: center;
+}
+
 /* Style the hero image section */
 #hero-image, #about  {
-  background-image: url(knife-background.jpg);
-  background-position: center;
+  background-position: left;
   background-size: cover;
   color: #fff;
   display: flex;
@@ -62,6 +65,10 @@ main {
   justify-content: center;
   height: 400px;
   text-align: center;
+}
+
+#my-logo {
+  margin-left: 0;
 }
 
 #hero-image h2 {
