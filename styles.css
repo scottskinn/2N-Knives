@@ -51,11 +51,12 @@ main {
 }
 
 h2 {
+  display: grid;
   justify-items: center;
 }
 
 /* Style the hero image section */
-#hero-image, #about  {
+#hero-image  {
   background-position: left;
   background-size: cover;
   color: #fff;
@@ -287,6 +288,10 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+textarea {
+  height: 10rem;
 }
 
 input[type="submit"] {
