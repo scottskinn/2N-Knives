@@ -6,7 +6,7 @@
 }
 
 /* Set the font and background colors for the entire page */
-body,html {
+body, html {
   font-family: "Roboto Mono", monospace;
   background-color: #9e9e9e;
   min-height: 100vh;
@@ -20,6 +20,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1em;
 }
 
 /* Style the navigation menu */
@@ -27,8 +28,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding: 1em;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 nav li {
@@ -56,7 +56,7 @@ h2 {
 }
 
 /* Style the hero image section */
-#hero-image  {
+#hero-image {
   background-position: left;
   background-size: cover;
   color: #fff;
@@ -102,11 +102,9 @@ h2 {
 /* Style the featured products section */
 #featured-products {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2em;
-  align-items: center;
 }
 
 #featured-products h2 {
@@ -114,13 +112,9 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.product-carosuel {
-  width: 100%;
-  display: contents;
-}
-
 .product {
   display: flex;
+  flex-direction: column;
   background-color: #dcdcdc96;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -131,29 +125,18 @@ h2 {
   padding: 1em;
   text-align: center;
   transition: box-shadow 0.2s ease-in-out;
-  flex-direction: column;
 }
 
 .product:hover {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-img {
+.product img {
   max-width: 100%;
   height: auto;
-  /* transform: rotate(90deg); */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   object-fit: contain;
-}
-
-#img {
-  transform: rotate(90deg);
-}
-
-#img2 {
-  transform: rotate(0deg);
 }
 
 .product h3 {
@@ -171,17 +154,13 @@ img {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto; 
-  margin: 5px;
-  border: 1px solid #000;
-  float: center;
+  margin: auto;
   width: 100%;
   overflow: hidden;
-
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3 {
+.mySlides {
   display: none;
 }
 
@@ -204,14 +183,14 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: -175px;
+  right: -50px;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-	left: -175px;
-	border-radius: 3px 0 0 3px;
-  }
+  left: -50px;
+  border-radius: 3px 0 0 3px;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -256,21 +235,6 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* contact page */
 form {
   max-width: 70%;
@@ -306,15 +270,98 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-
 /* Style the footer */
 footer {
   background-color: #333;
   color: #fff;
   padding: 1em;
   text-align: center;
-  position: inherit;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}
+
+/* Nav bar */
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+}
+
+#menu-toggle:checked ~ .dropdown-menu {
+  display: block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+  color: #ff9800; /* Change the color */
+  font-size: 24px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%; /* Make it circular */
+  transition: transform 0.3s ease-in-out; /* Add animation */
+}
+
+#menu {
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#menu ul li {
+  margin-bottom: 10px;
+}
+
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Small screens */
+@media only screen and (max-width: 750px) {
+  #menu ul {
+    display: none;
+  }
+  #menu.active {
+    left: 0;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .dropdown-menu {
+    list-style: none;
+  }
+  .dropdown-menu li {
+    margin-bottom: 5px;
+  }
+  #my-logo {
+    width: 300px;
+  }
+  footer {
+    font-size: 75%;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Add your styles here */
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+  /* Add your styles here */
 }

@@ -11,22 +11,20 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
-	<script src="./app.js"></script>
-
 </head>
 
 <body>
 	<header>
 		<a href="index.html">
-            <img src="images/My-logo.jpg" alt="Knife 1" id="my-logo" >
-        </a>
-		<nav>
-			<ul>
+			<img src="images/My-logo.jpg" alt="Knife 1" id="my-logo">
+		</a>
+		<nav id="menu">
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" id="menu-icon"><i class="fas fa-bars"></i></label>
+			<ul class="dropdown-menu">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="products.html">Products</a></li>

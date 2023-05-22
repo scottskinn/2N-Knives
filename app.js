@@ -43,3 +43,13 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
     window.location.href = mailtoLink;
 });
+
+// nav
+document.getElementById("menu-toggle").addEventListener("change", function() {
+    if (this.checked) {
+      document.getElementById("menu").classList.add("active");
+    } else {
+      document.getElementById("menu").classList.remove("active");
+    }
+  });
+  
