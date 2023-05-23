@@ -1,6 +1,6 @@
 # 2N-Knives
 
-Website for my personal business.
+Website for my personal business. <a href="https://scottskinn.github.io/2N-Knives/" target="_blank">2N Knives</a>
 
 ## Table of Contents
 

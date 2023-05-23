@@ -8,12 +8,9 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +36,8 @@
 			<p>
 				I specialize in handcrafted knives that are designed for both beauty and function.<br />
 				Follow me on Instagram @
-				<a href="https://www.instagram.com/2nknives" target="_blank">2N Knives</a>
+				<a href="https://www.instagram.com/2nknives" target="_blank">2N Knives</a> <br />
+				If you see a knife that you like, please reach out to me and we can make something happen!
 			</p>
 		</section>
 
@@ -50,16 +48,38 @@
 				<div class="slideshow-container">
 					<img src="images/camp-skinner1-2.jpg" id="img1">
 				</div>
-				<p>$185</p>
-				<a href="contact.html" class="cta-button">Inquire about this knife</a>
+				<p>
+					Price: $185 <br>
+					Steel: 80CRV2 <br>
+					Handle: Black micarta with green liner
+				</p>
+
+				<button 
+					class="cta-button" 
+					id="inquire-button1" 
+					data-product-name="Camp Skinner" 
+					data-product-description="Price: $185&#10;Steel: 80CRV2&#10;Handle: Black micarta with green liner"
+					>Inquire about this knife
+				</button>
+
 			</div>
 			<div class="product">
 				<h3>Mini Camp</h3>
 				<div class="slideshow-container">
 					<img src="images/mini-camp-2-1.jpg" id="img2">
 				</div>
-				<p>$150</p>
-				<a href="contact.html" class="cta-button">Inquire about this knife</a>
+				<p>
+					Price: $125 <br>
+					Steel: 52100 <br>
+					Handle: Maple with green liner
+				</p>
+				<button 
+					class="cta-button" 
+					id="inquire-button2" 
+					data-product-name="Mini Camp" 
+					data-product-description="Price: $125&#10;Steel: 52100&#10;Handle: Walnut with green liner"
+					>Inquire about this knife
+				</button>
 			</div>
 			<div class="product">
 				<h3>2N Camp Knife</h3>
@@ -68,8 +88,18 @@
 						<img src="images/2N-camp.jpg" alt="Knife 1" id="img2">
 					</div>
 				</div>
-				<p>$175</p>
-				<a href="contact.html" class="cta-button">Inquire about this knife</a>
+				<p>
+					Price: $175 <br>
+					Steel: A2 <br>
+					Handle: Maple
+				</p>
+				<button 
+					class="cta-button" 
+					id="inquire-button3" 
+					data-product-name="Mini Camp" 
+					data-product-description="Price: $175&#10;Steel: A2&#10;Handle: Maple handles"
+					>Inquire about this knife
+				</button>
 			</div>
 		</section>
 	</main>
@@ -78,8 +108,8 @@
 		<p>&copy; 2023 2N KNIVES. All Rights Reserved. Site made by me! Work in progress.</p>
 	</footer>
 
+	<script src="./app.js"></script>
 	<script src="jquery-3.7.0.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
