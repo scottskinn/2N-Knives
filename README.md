@@ -28,11 +28,11 @@ Download my code and install with *npm i and you are good to go!
 
 ## Usage
 
-Provide examples or instructions on how to use your project. Include code snippets or screenshots if applicable. You can also provide a link to a live demo or a deployed version of your project.
+Take a look around and if you see anything you like, click on the inquire button and it will send me the basic info on the knife. If you would like to make any changes please provide it in the email or I can make you a custom one with the materials you like!
 
 ## Technologies Used
 
-Im using the basic tech stacks to start this web page. I would like to take this futher once I feel it is necessary for success.
+Im using the basic tech stacks to start this web page. I would like to take this further once I feel it is necessary for success.
 
 - HTML
 - CSS
