@@ -6,10 +6,12 @@
 }
 
 /* Set the font and background colors for the entire page */
-body, html {
+body,
+html {
   font-family: "Roboto Mono", monospace;
   background-color: #9e9e9e;
   min-height: 100vh;
+  min-with: 100vw;
 }
 
 /* Style the header */
@@ -100,6 +102,31 @@ h2 {
   color: #fff;
 }
 
+/* about me section */
+
+#about h2 {
+  margin-bottom: 1rem;
+}
+
+#about p {
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 /* Style the featured products section */
 #featured-products {
   display: flex;
@@ -153,90 +180,6 @@ h2 {
   margin-bottom: 1em;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #ff9800;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: -50px;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: -50px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
 /* contact page */
 form {
   max-width: 70%;
@@ -261,11 +204,13 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
 }
 
 input[type="submit"]:hover {
@@ -279,7 +224,7 @@ footer {
   padding: 1em;
   margin-top: 20px;
   text-align: center;
-  position: fixed;
+  position: inherit;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -326,55 +271,6 @@ footer {
   height: 300px; /* Set the desired height */
   object-fit: cover; /* Preserve aspect ratio and crop if necessary */
   margin: 15px 10px; /* Optional margin between images */
-
-}
-
-
-
-/* Nav bar */
-/* Dropdown menu styles */
-.dropdown-menu {
-  display: none;
-}
-
-#menu-toggle:checked ~ .dropdown-menu {
-  display: block;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu-icon {
-  display: none;
-  color: #ff9800; /* Change the color */
-  font-size: 24px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 50%; /* Make it circular */
-  transition: transform 0.3s ease-in-out; /* Add animation */
-}
-
-#menu {
-  color: #fff;
-  padding: 20px;
-  transition: left 0.3s ease-in-out;
-}
-
-#menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-#menu ul li {
-  margin-bottom: 10px;
-}
-
-#menu ul li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* Small screens */
@@ -410,12 +306,12 @@ footer {
     grid-gap: 5px;
     margin-bottom: 10px;
   }
-  
+
   .gallery-container img {
     width: 75%;
-    height: 75%; 
-    object-fit: cover; 
-    margin: 0 auto; 
+    height: 75%;
+    object-fit: cover;
+    margin: 0 auto;
   }
 
   footer {
